@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge 1</title>
+</head>
+<body>
+
+	<canvas id="canvas" width="300" height="300"></canvas>
+
+	<script type="text/javascript">
+		
+		var date = new Date(1980, 9, 24);
+		var year, month, day; 
+
+		// console.log(date);
+
+		function isIt(date) {
+			year = date.getFullYear(); 
+			month = date.getMonth();
+			day = date.getDate(); 
+
+			console.log("year: "+year+", month: "+month+", day: "+day); 
+
+			if (month == 11 & day == 24) {
+				return console.log(true);
+			}
+			else return console.log(false); 
+		}
+
+		isIt(date); 
+
+	</script>
+
+</body>
+</html>
